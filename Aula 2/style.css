@@ -1,0 +1,90 @@
+.cor-primaria{
+    color: rgba(9, 9, 134, 0.664);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.noticias{
+    background-color: #CCC;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;/*Se tem quebra ou nao*/   /* flex-direction: column;/*Padrão é row*/
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+.box{
+  /*  border: 2px solid royalblue;*/
+    padding: 15px;/*Espacamento interno*/
+    margin: 5px;/*Espaçamento externo*/
+      /*  display: inline-block;*/
+    width: 200px;
+}
+
+.logo{
+    width: 70px;/*Largura*/
+    height: 70px;/*Altura*/
+    margin-top: 25px;
+    
+}
+
+h1{
+    display: inline-block;
+    width: 50%;
+
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.tabela{
+    border: 2px solid rgb(141, 18, 18);
+    width: 50%;
+    /*margin: top right bottom left;*/
+    /*margin: top-bottom right*left;*/
+    /*margin: top-right-bottom-left;*/
+    margin: 0 auto;
+    border-collapse: collapse;/*Configurar espaços entre as tds*/
+
+}
+
+.tabela td{
+  /*  border: 2px solid rgb(230, 65, 65);*/
+    background-color: #CCC;
+    padding: 5px;
+}
+
+.tabela td a{
+    color: blueviolet;
+}
+
+.marcador{
+    background-color: yellowgreen;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+/*Outro jeito de criar multiplar classes para uma mesma configuração*/
+.tabela , .tabela td{
+
+}
+
+.box .logo{
+    margin-bottom: 20px;
+}

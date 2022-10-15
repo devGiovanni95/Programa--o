@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+    <div id="status" onclick="abrirFecharLoja()" style="background-color: green;">
+        Loja aberta
+    </div>
+    <script>
+        function abrirFecharLoja(){
+            const loja = document.getElementById('status');
+            if(loja.innerText == "Loja aberta"){
+                loja.innerText = "Loja fechada";
+                loja.style = "background-color: red";
+            } else {
+                loja.innerText = "Loja aberta";
+                loja.style = "background-color: green";                
+            }
+        }
+    </script>
+</body>
+</html>

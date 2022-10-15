@@ -1,0 +1,92 @@
+body{
+
+    font-family: 'Markazi Text';
+    font-weight: 400;
+  }
+
+  @supports (font-variation-settings: "wght" 450) {
+    * {
+      font-family: 'Markazi Text';
+      font-weight: 450;
+    }
+
+}
+
+.cor-p{
+    color: rgb(37, 37, 204);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.noticias{
+    background-color: #CCC;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* se tem quebra ou não */
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.box{
+    padding: 15px;
+    width: 200px;
+    margin: 5px;
+}
+
+.logo{
+    /* largura */
+    width: 100px;
+    /* altura */
+    height: 60px;
+    margin-top: 25px;
+}
+
+h1{
+    display: inline-block;
+    width: 50%;
+}
+
+.center{
+    text-align: center;
+}
+
+.tabela, .tabela td, .box{
+    border: 2px solid #333;
+}
+
+.tabela{
+    width: 50%;
+    /* margin: top right bottom left; */
+    /* margin: top-bottom right-left */
+    /* margin: top-bottom-right-left; */
+    margin: 0 auto;
+    border-collapse: collapse; /* configurar espaço entre as tds */
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabela td{
+    background-color: #CCC;
+    padding: 5px;
+}
+
+.tabela td a{
+    color: aquamarine;
+}
+
+.marcador {
+    background-color: yellow;
+}
+
+.box .logo{
+    margin-bottom: 20px;
+}

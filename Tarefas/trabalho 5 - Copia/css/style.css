@@ -1,0 +1,12 @@
+table, td{
+    border: 2px solid #333;
+}
+
+table{
+    margin-bottom: 20px;
+}
+
+.icone{
+    width: 20px;
+    height:20px;
+}
