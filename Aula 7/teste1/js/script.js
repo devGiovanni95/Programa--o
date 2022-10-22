@@ -9,14 +9,21 @@ function calcular() {
   if (valor1 <= 0 || valor2 <= 0) {
     alert("Preencha todos os dados")
   } else {
-    if (op == 1) {
-      resultado = valor1 + valor2
-    } else if (op == 2) {
-      resultado = valor1 - valor2
-    } else if (op == 3) {
-      resultado = valor1 / valor2
-    } else {
-      resultado = valor1 * valor2
+    switch (op) {
+      case 1:
+        resultado = valor1 + valor2
+        break
+      case 2:
+        resultado = valor1 - valor2
+        break
+      case 3:
+        resultado = valor1 / valor2
+        break
+      case 4:
+        resultado = valor1 * valor2
+        break
+      default:
+        break
     }
     if (isNaN(resultado)) {
       alert("Apenas valores Numericos")
