@@ -1,0 +1,11 @@
+body .teste {
+  background-color: blueviolet;
+}
+
+p {
+  background-color: #333 !important;
+}
+
+.teste {
+  background-color: aqua;
+}
