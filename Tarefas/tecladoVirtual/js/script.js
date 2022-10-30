@@ -14,6 +14,7 @@ function tam() {
       0,
       tamanho.length - 1
     )
+    alert("Ops só é permitido 6 numeros")
   }
 }
 
@@ -26,4 +27,15 @@ function limpar() {
     0,
     senha.length - 1
   )
+}
+
+function confirma() {
+  let senha = document.getElementById("visor").innerHTML
+  if (senha == "123456") {
+    alert("Acesso Permitido")
+  } else {
+    alert("Acesso Negado tente de novo")
+  }
+
+  limparTudo()
 }
