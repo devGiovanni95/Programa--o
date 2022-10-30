@@ -1,28 +1,3 @@
-valor1 = document.getElementById("1").value
-document.getElementById("2").value = 2
-
-function escrever() {
-  /*  document.getElementById(this).value;*/
-  document.getElementById("password").value = valor1
-  console.log(valor1)
-  console.log(document.getElementById("password").value)
-}
-
-/*document.getElementById("password").value =document.getElementById(this).value;*/
-/*
-function num(x) {
-  let senha = document.getElementById("visor").innerHTML
-  // let tam = senha.length - 75;
-  let tam = senha.length - 75
-
-  do {
-    document.getElementById("visor").innerHTML = senha + x
-  } while (tam > 6)
-
-  console.log(senha.length - 75)
-
-}*/
-
 function num(x) {
   let senha = document.getElementById("visor").innerHTML
   document.getElementById("visor").innerHTML = senha + x
@@ -39,6 +14,7 @@ function tam() {
       0,
       tamanho.length - 1
     )
+    alert("Ops só é permitido 6 numeros")
   }
 }
 
@@ -51,4 +27,15 @@ function limpar() {
     0,
     senha.length - 1
   )
+}
+
+function confirma() {
+  let senha = document.getElementById("visor").innerHTML
+  if (senha == "123456") {
+    alert("Acesso Permitido")
+  } else {
+    alert("Acesso Negado tente de novo")
+  }
+
+  limparTudo()
 }
