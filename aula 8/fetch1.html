@@ -1,0 +1,23 @@
+<div id="logradouro"></div>
+<div id="localidade"></div>
+<div id="uf"></div>
+<img src="" alt="" id="poke">
+
+
+<script>
+  function preencherTela(data) {
+    document.getElementById('logradouro').innerText = data.logradouro;
+    document.getElementById('localidade').innerText = data.localidade;
+    document.getElementById('uf').innerText = data.uf;
+  }
+
+  //  let endereco;
+  fetch('https://viacep.com.br/ws/13332051/json/')
+    .then(response => response.json())//
+    .then(data => {
+      console.table(data);
+      preencherTela(data);
+    })
+
+
+</script>

@@ -1,0 +1,22 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teclado{
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+.senha{
+    border: 2px solid #333;
+    padding: 10px;
+    height: 30px;
+}

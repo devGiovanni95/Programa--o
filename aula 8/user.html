@@ -1,0 +1,28 @@
+<div id="nome"></div>
+<div id="email"></div>
+<div id="picture"></div>
+
+
+<script>
+  function preencherTela(data) {
+    document.getElementById('nome').innerText = data.results[0].name.first;
+    document.getElementById('email').innerText = data.results[0].email;
+    document.getElementById('picture').innerHTML = data.results[0].picture.large;
+  }
+
+  //  let endereco;
+  fetch('https://randomuser.me/api/')
+    .then(response => response.json())//
+    .then(data => {
+      //  console.table(data);
+      console.log(data);
+
+      preencherTela(data);
+    })
+  /*  .then( => {
+      console.log(results)
+    })
+    .then()
+*/
+
+</script>

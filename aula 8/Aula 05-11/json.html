@@ -1,0 +1,38 @@
+<script>
+    const pessoa = {
+        results: [
+            {
+                name: {
+                    title: "Mr",
+                    first: "Eduardo",
+                    last: "da Silva"
+                },
+            },
+            {
+                name: {
+                    title: "Mr",
+                    first: "Eduardo",
+                    last: "da Silva"
+                },
+            },            
+        ]
+    }
+
+    console.log(pessoa);
+
+    class Pessoa{
+        constructor(nome, idade, altura){
+            this.nome = nome;
+            this.idade = idade;
+            this.altura = altura;
+        }
+
+        getNome(){
+            return this.nome;
+        }
+    }
+
+    const pessoa2 = new Pessoa("João", 25, 1.75);
+
+    console.log(pessoa2.getNome());
+</script>

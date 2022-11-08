@@ -1,0 +1,25 @@
+<script>
+  fetch('https://randomuser.me/api/')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+
+    //Chamada da api
+  fetch('https://viacep.com.br/ws/01001000/json/')
+  .then(response => response.json())//
+  .then(data1 => {
+    console.log(data1);
+  })
+
+  let endereco;
+  fetch('https://viacep.com.br/ws/13332051/json/')
+  .then(response => response.json())//
+  .then(data1 => {
+    console.table(data1);
+    endereco = data1;
+    document.write(data1.logradouro);
+  })
+
+
+</script>
