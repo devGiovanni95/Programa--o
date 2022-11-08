@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <h1>Pesquisar Pokemon</h1>
+    Digite o codigo do Pokemon <br>
+    <div><input type="text" id="idPok"> <button id="pesquisar" onclick="idPokemon()">Pesquisar</button></div>
+
+    <div id="nomePokemon"></div>
+    <img src="" alt="" id="Pokemon">
+  </div>
+</body>
+<script>
+  function idPokemon() {
+    let idPoke = document.getElementById('idPok').value;
+    console.log(idPoke)
+
+    fetch('https://pokeapi.co/api/v2/pokemon/' + idPoke)
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('Pokemon').src = data.sprites.front_default;
+        //preencherTela(data);
+        console.log(data)
+        document.getElementById('nomePokemon').innerText = data.name;
+        //document.write = data.moves.name;
+      })
+  }
+
+  function preencherTela(data) {
+    document.getElementById('nomePokemon').innerText = data
+  }
+
+
+
+
+
+</script>
+
+</html>

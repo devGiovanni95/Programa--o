@@ -1,0 +1,36 @@
+<div id="nome"></div>
+<div id="email"></div>
+<div id="picture"></div>
+<img src="" alt="" id="poke">
+
+<script>
+  function preencherTela(data) {
+    document.getElementById('nome').innerText = data.results[0].name.first;
+    document.getElementById('email').innerText = data.results[0].email;
+    document.getElementById('picture').innerHTML = data.results[0].picture.large;
+  }
+
+  //  let endereco;
+  /*  fetch('https://randomuser.me/api/')
+      .then(response => response.json())//
+      .then(data => {
+        //  console.table(data);
+        console.log(data.results[0].name);
+        document.write(data.results[0].name.first);
+        document.write("<br>");
+        document.write(data.results[0].email);
+        document.write("<br>");
+        document.write("<img src='" + data.results[0].picture.large + "'>")
+      })*/
+  //rnd.toString()
+  let rdn = Math.floor(Math.random() * 1000);
+  fetch('https://pokeapi.co/api/v2/pokemon/' + 23)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('poke').src = data.sprites.front_default;
+    })
+
+
+
+
+</script>
