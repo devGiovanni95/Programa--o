@@ -1,0 +1,31 @@
+button{
+  width: 100px;
+  height: 40px;
+}
+ input{
+  width: 180px;
+  height: 35px;
+ }
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+ 
+}
+
+.fonte{
+  font-size: 70px;
+}
+
+
+
+
+
+body{
+  background-image: url(../assets/fundo.png);
+  background-size:  119%;
+  background-repeat: no-repeat;
+}
+
