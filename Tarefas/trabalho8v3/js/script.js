@@ -1,32 +1,28 @@
-function preencherTela(data) {
+let numId = 0
+
+function preencherTela(data, num, namepoke) {
   //mostra a imagem do pokemon
-  let pokemon = (document.src = data.sprites.front_default)
-  const tr = document.createElement("tr")
-
-  const img = document.createElement("img")
-  img.document.src = data.sprites.front_default
-
- // const tabelaPokemon = document.getElementById.getElementById("listaPokemons")
-
-  //const td = document.createElement("td")
- // td.innerHTML = pokemon
-
+  document.getElementById(num).src = data.sprites.front_default
   // Mostra o nome
- // document.getElementById("nomePokemon").innerText = data.name
-
-  tr.appendChild(img)
+  document.getElementById(namepoke).innerText = data.name
 }
 
 function idPokemon() {
   let idPoke = document.getElementById("idPok").value
   console.log(idPoke)
+  numId++
+  namepoke = numId + "a"
 
-  //Chama api do pokemon
-  fetch("https://pokeapi.co/api/v2/pokemon/" + idPoke)
-    //converte em json
-    .then((response) => response.json())
-    //tratamento
-    .then((data) => {
-      preencherTela(data)
-    })
+  if (idPoke > 0 && idPoke < 899) {
+    //Chama api do pokemon
+    fetch("https://pokeapi.co/api/v2/pokemon/" + idPoke)
+      //converte em json
+      .then((response) => response.json())
+      //tratamento
+      .then((data) => {
+        preencherTela(data, numId, namepoke)
+      })
+  } else {
+    alert("Ops!!! Pokemon não cadastrado ainda")
+  }
 }

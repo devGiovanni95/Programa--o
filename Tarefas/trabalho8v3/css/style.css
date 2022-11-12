@@ -1,31 +1,50 @@
-button{
+button {
   width: 100px;
   height: 40px;
 }
- input{
+input {
   width: 180px;
   height: 35px;
- }
+}
 
-.principal{
+.principal {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
- 
 }
 
-.fonte{
+.fonte {
   font-size: 70px;
 }
 
-
-
-
-
-body{
-  background-image: url(../assets/fundo.png);
-  background-size:  119%;
-  background-repeat: no-repeat;
+td {
+  border: 5px solid red;
+  width: 150px;
+  height: 150px;
+  margin: 2px;
+  padding: 5px;
 }
 
+h5 {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+td,
+img {
+  /*display: flex;*/
+  margin: 0;
+  height: 150px;
+  width: 150px;
+}
+
+body {
+  background-image: url(../assets/fundo.png);
+  background-size: 119%;
+  background-repeat: no-repeat;
+}
