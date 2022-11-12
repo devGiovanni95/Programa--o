@@ -1,0 +1,20 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  height: 70px;
+  width: 300px;
+  margin: 5px;
+}

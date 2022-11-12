@@ -19,7 +19,6 @@ input {
 }
 
 td {
-  border: 5px solid red;
   width: 150px;
   height: 150px;
   margin: 2px;
@@ -37,14 +36,15 @@ h5 {
 
 td,
 img {
-  /*display: flex;*/
-  margin: 0;
-  height: 150px;
-  width: 150px;
+  border: none;
+  margin: none;
+  /*height: 150px;*/
+   width: 150px;
 }
 
 body {
-  background-image: url(../assets/fundo.png);
+  /* background-image: url(../assets/fundo.png);
   background-size: 119%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
 }

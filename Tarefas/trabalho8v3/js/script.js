@@ -24,5 +24,10 @@ function idPokemon() {
       })
   } else {
     alert("Ops!!! Pokemon não cadastrado ainda")
+    numId--
   }
+}
+
+function limpar() {
+  window.location.reload()
 }
