@@ -56,7 +56,7 @@ function mediaAritmetica() {
 
   if (quantidadeAlunos > 0) {
     for (let i = 0; i < quantidadeAlunos; i++) {
-      nota = Number(prompt("Digite a nota do aluno " + i + " :"))
+      nota = Number(prompt("Digite a nota do aluno " + (i + 1) + " :"))
       notaSala = notaSala + nota
     }
     let mediaAritmetica = Number(notaSala / quantidadeAlunos)
@@ -181,8 +181,8 @@ function somaMultiplicacao() {
 }
 
 function fatorial() {
-  let num = Number(prompt("Digite um Numero: "))
-  let fatorial = Number(1)
+  let num = BigInt(prompt("Digite um Numero: "))
+  let fatorial = BigInt(1)
   let aux = num
   for (num; num > 0; num--) {
     fatorial = fatorial * num
