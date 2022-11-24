@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="texto">
+  <h1 id="nome" class="text"></h1>
+  <h1 id="saudacao" class="saudacao">Seja Bem Vindo</h1>
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+
+  <script>
+    const input = prompt("Digite Seu Nome: ");
+    const nome = $('#nome');
+    nome.text(input);
+
+
+
+    const saudacao = $('#saudacao');
+    saudacao.animate({
+      width: "100%",
+      opacity: 0.4,
+      marginLeft: "0.6in",
+      fontSize: "10em",
+      borderWidth: "10px"
+    }, 5000);
+    saudacao.hide(2000),
+      nome.text(input).hide(),
+      nome.show(5000),
+      nome.hide(9000)
+
+  </script>
+</body>
+
+</html>

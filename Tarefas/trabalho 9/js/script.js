@@ -1,6 +1,6 @@
 function calculaSalario() {
-  let salarioDigitado = prompt("Digite o seu Salario atual: ")
-  let salario = Number(salarioDigitado.replace(",", "."))
+  const salarioDigitado = prompt("Digite o seu Salario atual: ")
+  const salario = Number(salarioDigitado.replace(",", "."))
 
   let percentualDigitado = prompt("Digite o Percentual de aumento: ")
   let percentual = Number(percentualDigitado.replace(",", ".")) / 100
@@ -18,6 +18,10 @@ function calculaSalario() {
   )
 }
 
+//Usando variaveis no meio de do texto escrito
+//Usamos APOSTAFO
+//alert(`O novo salario é de ${}`)
+
 function calculaPrecoMaca() {
   let quantidadeMaca = Number(
     prompt("Digite a quantidade de maçãs que deseja comprar: ")
@@ -32,6 +36,9 @@ function calculaPrecoMaca() {
   } else {
     alert("Ops! Tente novamente")
   }
+
+  //IF Ternario
+  //const precoMaca = quantidadeMaca < 12 ? 1.3 : 1.0
 }
 
 function numeroInteiro() {
@@ -152,6 +159,37 @@ function temperaturaMedia() {
   }
 
   alert(acimaMedia.replace("undefined", " "))
+}
+
+//Correção temperatura media
+function temp() {
+  let meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ]
+  let temperatura = []
+  let somaTemp = 0
+  for (let i = 0; i < 12; i++) {
+    temperatura.push(Number(prompt(`Digite a temperatura do mês ${meses[i]}`)))
+    somaTemp += temperatura[i]
+  }
+  const mediaTemp = somaTemp / 12
+
+  for (let i = 0; i < 12; i++) {
+    if (temperatura[i] > mediaTemp) {
+      alert(`O mês ${meses[i]} teve uma temperatura acima da média`)
+    }
+  }
 }
 
 function somaMultiplicacao() {

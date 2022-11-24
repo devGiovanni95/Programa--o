@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=div, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="caixa_a">A</div>
+  <div id="caixa_b">B</div>
+
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+
+  <script>
+    const caixa_a = $('#caixa_a');
+    //const caixa_a = document.getElementById('caixa_a')
+    console.log(caixa_a);
+    console.log(caixa_a.text());//Mostra o texto contido nele
+    caixa_a.hide(2500);//Oculta a visualização do item com uma duracao
+    caixa_a.show(2500);//mostrar elemento
+    caixa_a.animate({
+      width: "70%",
+      opacity: 0.4,
+      marginLeft: "0.6in",
+      fontSize: "3em",
+      borderWidth: "10px"
+    }, 5000);
+
+
+  </script>
+
+</body>
+
+</html>
