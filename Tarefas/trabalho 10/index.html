@@ -14,13 +14,14 @@
   <h1 id="nome" class="text"></h1>
   <h1 id="saudacao" class="saudacao">Seja Bem Vindo</h1>
 
+
   <script src="js/jquery-3.6.1.min.js"></script>
 
   <script>
     const input = prompt("Digite Seu Nome: ");
     const nome = $('#nome');
     nome.text(input);
-
+    // nome.hide();
 
 
     const saudacao = $('#saudacao');
@@ -33,10 +34,11 @@
     }, 5000);
     saudacao.hide(2000),
       nome.text(input).hide(),
-      nome.show(5000),
-      nome.hide(9000)
+      nome.show(5000)
 
   </script>
+
+
 </body>
 
 </html>
