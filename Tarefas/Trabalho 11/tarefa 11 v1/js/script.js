@@ -13,7 +13,7 @@ function addTarefa(tarefa) {
   const tempo = document.getElementById("tempo").value
 
   /*push adicionar no finalda lista */
-  if (novaTarefa != "" && tempo != "") {
+  if (novaTarefa !== "" && tempo !== "") {
     listaTarefas.push(tarefa)
     renderizarTarefas()
   } else {
@@ -62,15 +62,9 @@ function renderizarTarefas() {
       li.innerHTML += `<button type="button"
                       class="btn btn-warning btn-sm"
                       onclick="fazerTarefa(${texto.id}, this)">
-                      Fazer
+                    Fazer  
                       </button>
                       `
-      li.innerHTML += `<button type="button"
-                      class="btn btn-danger btn-sm"
-                      onclick="removerTarefa(${texto.id})">
-                      Remover
-                      </button>
-                      <hr>`
     } else {
       li.innerHTML += `<button type="button"
                       class="btn btn-success btn-sm"
@@ -78,13 +72,14 @@ function renderizarTarefas() {
                       Desfazer
                       </button>
                       `
-      li.innerHTML += `<button type="button"
+    }
+
+    li.innerHTML += `<button type="button"
                       class="btn btn-danger btn-sm"
                       onclick="removerTarefa(${texto.id})">
                       Remover
                       </button>
                       <hr>`
-    }
 
     listaUl.appendChild(li)
   })
