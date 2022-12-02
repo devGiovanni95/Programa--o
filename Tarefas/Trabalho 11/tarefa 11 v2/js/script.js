@@ -98,14 +98,12 @@ function renderizarTarefas() {
     campoBtn.appendChild(li2)
   })
 
-  const somaId = listaTarefas.reduce((acumulador, item) => {
+  const somaMinutos = listaTarefas.reduce((acumulador, item) => {
     return acumulador + Number(item.tempo)
   }, 0)
 
   let tempoTotal = document.getElementById("tempoTotal")
-  tempoTotal.innerHTML = somaId
-  console.log(somaId)
-
+  tempoTotal.innerHTML = somaMinutos
 }
 
 renderizarTarefas()
