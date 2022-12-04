@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  color: #000428;
+}
+
+.text {
+  font-size: 30px;
+}
+
+.tempo {
+  font-size: 35px;
+  color: rgb(141, 43, 43);
+}
